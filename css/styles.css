@@ -7,6 +7,28 @@
   --accent-color: #2196f3;
   --logo-header-color: #000000;
   --btn-bg-color: #f5f4fa;
+  --border-color: #eeeeee;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -15,6 +37,15 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--third-text-color);
+  /* width: 1600px; */
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  outline: 2px solid red;
 }
 
 .link {
@@ -46,7 +77,39 @@ body {
 
 /* HEADER */
 
+.header {
+  border: 1px solid var(--border-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-item:not(:last-child),
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link,
+.header-contacts-link {
+  display: flex;
+  padding: 32px 0;
+}
+
 .header-logo {
+  margin-right: 93px;
+
   color: var(--logo-header-color);
 }
 
@@ -77,8 +140,16 @@ body {
 }
 
 /* HERO */
+
 .hero {
   background-color: var(--primary-bg-color);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 252px;
 }
 
 .hero-title {
@@ -92,6 +163,9 @@ body {
 }
 
 .hero-btn {
+  margin-top: 30px;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -120,7 +194,6 @@ body {
 /* FEATURES */
 
 .features-item {
-  display: inline-block;
   width: 270px;
   margin-left: auto;
   margin-right: auto;
@@ -141,10 +214,6 @@ body {
 
 /* WORK */
 
-.work-item {
-  display: inline-block;
-}
-
 /* TEAM */
 
 .section-team {
@@ -152,7 +221,6 @@ body {
 }
 
 .team-item {
-  display: inline-block;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -229,7 +297,7 @@ body {
 }
 
 .projects-item {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 
