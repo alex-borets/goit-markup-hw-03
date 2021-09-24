@@ -1,0 +1,248 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --third-text-color: #ffffff;
+  --primary-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --logo-header-color: #000000;
+  --btn-bg-color: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--third-text-color);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.btn {
+  cursor: pointer;
+  border-style: none;
+  font-family: inherit;
+  text-align: center;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+/* HEADER */
+
+.header-logo {
+  color: var(--logo-header-color);
+}
+
+.logo-desc {
+  color: var(--accent-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.header-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* HERO */
+.hero {
+  background-color: var(--primary-bg-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
+  border-radius: 4px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* SECTIONS */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: cald(42/36);
+  text-align: center;
+}
+
+/* FEATURES */
+
+.features-item {
+  display: inline-block;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.features-desc {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--secondary-text-color);
+}
+
+/* WORK */
+
+.work-item {
+  display: inline-block;
+}
+
+/* TEAM */
+
+.section-team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-item {
+  display: inline-block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--third-text-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--primary-bg-color);
+}
+
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+.footer-logo {
+  color: var(--third-text-color);
+}
+
+.footer-adress-link {
+  color: var(--third-text-color);
+}
+
+.footer-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-adress-link:hover,
+.footer-adress-link:focus,
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO MAIN*/
+
+.portfolio-btn {
+  background: var(--btn-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  border-radius: 4px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus,
+.portfolio-btn:active {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.current-btn {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+
+.projects-item {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.projects-type {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--secondary-text-color);
+}
