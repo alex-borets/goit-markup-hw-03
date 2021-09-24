@@ -44,8 +44,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-
-  outline: 2px solid red;
 }
 
 .link {
@@ -149,7 +147,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 252px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -160,6 +159,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
+  max-width: 696px;
 }
 
 .hero-btn {
@@ -169,8 +169,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--third-text-color);
@@ -183,6 +181,10 @@ body {
 }
 
 /* SECTIONS */
+
+.section {
+  display: flex;
+}
 
 .section-title {
   font-weight: 700;
