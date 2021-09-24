@@ -263,8 +263,12 @@ body {
   background-color: var(--third-text-color);
 }
 
+.team-desc {
+  padding: 30px 0;
+}
+
 .team-name {
-  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -273,9 +277,6 @@ body {
 }
 
 .team-position {
-  margin-top: 10px;
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -332,7 +333,27 @@ body {
 
 /* PORTFOLIO MAIN*/
 
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.section-portfolio {
+  padding-bottom: 94px;
+}
+
+.btn-list {
+  margin-bottom: 34px;
+  padding-bottom: 16px;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-btn {
+  padding: 6px 22px;
+
   background: var(--btn-bg-color);
   font-weight: 500;
   font-size: 16px;
@@ -354,12 +375,33 @@ body {
   background-color: var(--accent-color);
 }
 
+/* PROJECTS */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
 .projects-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+
   border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 
 .projects-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
